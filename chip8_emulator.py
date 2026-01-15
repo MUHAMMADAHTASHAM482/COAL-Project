@@ -1,36 +1,3 @@
-"""
-CHIP-8 emulator  using Tkinter for display and input.
-
-Features:
-- Full CHIP-8 opcode set
-- Memory, registers, stack, timers
-- Display (64x32) rendered in Tkinter Canvas
-- Keyboard mapping (hex keypad -> PC keyboard)
-- Load ROMs from command line
-- Save / Load emulator state.
-- Simple step debugger (pause, step)
-- Basic disassembly overlay (toggle)
-
-Dependencies: only Python 3.11
-
-Usage:
-    python chip8_emulator.py path/to/rom.ch8
-
-Controls (while window focused):
-    ESC        -> Quit
-    Space      -> Pause / Resume
-    S          -> Step one instruction (when paused)
-    F5         -> Save state (state.sav)
-    F9         -> Load state (state.sav)
-    D          -> Toggle disassembly overlay
-    R          -> Reset emulator
-    Backspace  -> Rewind (lightweight history)
-
-Hex keypad mapping (chip-8 -> keyboard):
-    1 2 3 4     -> 1 2 3 4
-    Q W E R     -> Q W E R
-    A S D F     -> A S D F
-    Z X C V     -> Z X C V
 
 Author: Ahtasham
 """
@@ -497,3 +464,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
