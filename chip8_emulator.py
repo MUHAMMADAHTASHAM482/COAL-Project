@@ -332,10 +332,6 @@ class Chip8:
             return f'DRW V{x}, V{y}, {n}'
         return hex(opcode)
 
-# ---------------------------
-# Tkinter frontend and control
-# ---------------------------
-
 class Chip8UI:
     def __init__(self, chip, rompath):
         self.chip = chip
@@ -444,11 +440,7 @@ class Chip8UI:
             self.root.mainloop()
         except KeyboardInterrupt:
             pass
-
-# ---------------------------
-# Entry point
-# ---------------------------
-
+            
 def main():
     if len(sys.argv) < 2:
         print('Usage: python chip8_emulator.py <romfile>')
@@ -464,4 +456,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
